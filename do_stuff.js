@@ -7,7 +7,7 @@
  Na() - Initialize?
 
  */
-
+main_out_url = "http://agar.io/main_out.js";
 tester = document.getElementsByTagName("script");
 discovered_mainouturl = 0;
 
