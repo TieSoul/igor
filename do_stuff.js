@@ -20,7 +20,7 @@ for (i=0; i<tester.length; i++ ){
 
 if(discovered_mainouturl != 0) {
     httpGet(discovered_mainouturl, function(data) {
-        gamejs = data;
+        gamejs = "window.igor = " + data;
         gamejs = gamejs.replace(/\n/g, "");
         injectBot();
     })
