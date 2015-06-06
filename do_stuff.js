@@ -42,7 +42,7 @@ function injectBot() {
     script.src='//cdnjs.cloudflare.com/ajax/libs/canvasjs/1.4.1/canvas.min.js';
     document.head.appendChild(script);
 
-    gamejs = gamejs.replace("wa(){", "wa(){console.log('test');");
+    gamejs = gamejs.replace("socket open", "socket open (Igor in place)");
     script = document.createElement("script");
     script.innerHTML = gamejs;
     document.head.appendChild(script);
